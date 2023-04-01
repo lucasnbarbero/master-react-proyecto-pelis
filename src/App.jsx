@@ -1,3 +1,7 @@
+import { Buscador } from './components/Buscador';
+import { CrearPeliculas } from './components/CrearPeliculas';
+import { Listado } from './components/Listado';
+
 export const App = () => {
   return (
     <div className="layout">
@@ -26,72 +30,12 @@ export const App = () => {
       </nav>
 
       <section className="content">
-        <article className="peli-item">
-          <h3 className="title">Desarrollo web</h3>
-          <p className="description">miweb.es</p>
-          <button className="edit">Editar</button>
-          <button className="delete">Eliminar</button>
-        </article>
-        <article className="peli-item">
-          <h3 className="title">Desarrollo web</h3>
-          <p className="description">miweb.es</p>
-          <button className="edit">Editar</button>
-          <button className="delete">Eliminar</button>
-        </article>
-        <article className="peli-item">
-          <h3 className="title">Desarrollo web</h3>
-          <p className="description">miweb.es</p>
-          <button className="edit">Editar</button>
-          <button className="delete">Eliminar</button>
-        </article>
-        <article className="peli-item">
-          <h3 className="title">Desarrollo web</h3>
-          <p className="description">miweb.es</p>
-          <button className="edit">Editar</button>
-          <button className="delete">Eliminar</button>
-        </article>
-        <article className="peli-item">
-          <h3 className="title">Desarrollo web</h3>
-          <p className="description">miweb.es</p>
-          <button className="edit">Editar</button>
-          <button className="delete">Eliminar</button>
-        </article>
-        <article className="peli-item">
-          <h3 className="title">Desarrollo web</h3>
-          <p className="description">miweb.es</p>
-          <button className="edit">Editar</button>
-          <button className="delete">Eliminar</button>
-        </article>
-        <article className="peli-item">
-          <h3 className="title">Desarrollo web</h3>
-          <p className="description">miweb.es</p>
-          <button className="edit">Editar</button>
-          <button className="delete">Eliminar</button>
-        </article>
-        <article className="peli-item">
-          <h3 className="title">Desarrollo web</h3>
-          <p className="description">miweb.es</p>
-          <button className="edit">Editar</button>
-          <button className="delete">Eliminar</button>
-        </article>
+        <Listado />
       </section>
 
       <aside className="lateral">
-        <div className="search">
-          <h3 className="title">Buscador</h3>
-          <form>
-            <input type="text" />
-            <button>Buscar</button>
-          </form>
-        </div>
-        <div className="add">
-          <h3 className="title">Añadir pelicula</h3>
-          <form>
-            <input type="text" placeholder="Titulo" />
-            <textarea placeholder="Descripción"></textarea>
-            <input type="submit" value="Guardar" />
-          </form>
-        </div>
+        <Buscador />
+        <CrearPeliculas />
       </aside>
 
       <footer className="footer">
