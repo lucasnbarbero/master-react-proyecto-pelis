@@ -135,6 +135,10 @@ input[type='button'] {
   transition: var(--transition);
 }
 
+.peli-item .edit {
+  margin-right: 7px;
+}
+
 .peli-item .edit:hover {
   background: #e77b00;
 }
